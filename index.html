@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BMAC International Trade - Your trusted partner for premium Hungarian wines and honey from Huro Winery and Bee Huro.">
+    <meta name="keywords" content="BMAC International, Hungarian wine, Bee Huro honey, Huro Winery, UK wholesale">
+    <title>BMAC International Trade | Premium Hungarian Wines & Honey</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="BMAC International Trade">
+    <meta property="og:description" content="Your trusted partner for premium Hungarian wines and artisanal honey.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=1200&q=80">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Hero Animation */
+        .hero-animation {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1440px;
+            height: 900px;
+            max-width: 100vw;
+            z-index: 1;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.15) 100%);
+            z-index: 2;
+        }
+
+        @media (max-width: 1440px) {
+            .hero-animation {
+                width: 100%;
+                left: 0;
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body class="home-page">
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <div class="logo">
+            <a href="index.html">BMAC</a>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="our-wines.html" class="nav-link">HURO Winery</a>
+            <a href="" class="nav-link">HURO Honey</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section with Unicorn Animation (NO BUTTONS) -->
+<section class="hero" style="min-height: 100vh; position: relative;">
+    <div class="hero-animation">
+        <div
+                data-us-project="1ZwDUsQZenGIMvOxukVF"
+                data-us-production="true"
+                data-us-lazyload="true"
+                data-us-scale="0.8"
+                data-us-dpi="1.4"
+                data-us-fps="120"
+                style="width:1440px; height: 900px"
+        ></div>
+    </div>
+    <div class="hero-overlay"></div>
+</section>
+
+<!-- Introduction Section -->
+<section class="intro-home-section">
+    <div class="container">
+        <div class="intro-home-content">
+            <h2>Welcome to BMAC International Trade</h2>
+            <p class="lead">Your trusted partner for premium Hungarian products</p>
+            <p>
+                BMAC International Trade represents Huro Winery and Bee Huro Honey, assisting them with importing
+                the finest wines and honey into the UK from Hungary and the Romanian Transylvania region. We are here
+                to help you find the perfect products or solutions to increase your profit.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Two Product Banners: Huro Winery + Bee Huro Honey -->
+<section class="two-banners-section">
+    <div class="container">
+        <div class="two-banners-grid">
+            <!-- Huro Winery Banner -->
+            <div class="product-banner" style="background-image: url('https://images.unsplash.com/photo-1474722883778-792e7990302f?w=1200&q=80');">
+                <div class="product-banner-overlay"></div>
+                <div class="product-banner-content">
+                    <h3>Huro Winery</h3>
+                    <p>Premium wines from Hungary and Romania</p>
+                    <a href="https://hurowinery.com/collections/" target="_blank" rel="noopener" class="product-banner-button">Explore Wines</a>
+                </div>
+            </div>
+
+            <!-- Bee Huro Honey Banner -->
+            <div class="product-banner" style="background-image: url('img/honey2.jpg');">
+                <div class="product-banner-overlay"></div>
+                <div class="product-banner-content">
+                    <h3>Bee Huro Honey</h3>
+                    <p>Raw acacia honey from Hungary and Transylvania</p>
+                    <a href="https://www.thehoneycollab.co.uk" target="_blank" rel="noopener" class="product-banner-button">Discover Honey</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Looking for Something Special -->
+<section class="special-section">
+    <div class="container">
+        <div class="special-grid">
+            <div>
+                <img src="https://images.unsplash.com/photo-1516594915697-87eb3b1c14ea?w=800&q=80" alt="Vineyard Team" class="special-image">
+            </div>
+            <div class="special-content">
+                <h2>Looking for Something Special?</h2>
+                <p>
+                    We are here to help you find the perfect products or solution to increase your profit. Please don't hesitate to contact us and one of our colleagues will answer your queries as soon as possible.
+                </p>
+                <a href="contact.html" class="cta-button">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Our Blog -->
+<section class="blog-home-section">
+    <div class="container">
+        <div class="blog-header">
+            <div>
+                <h2>Our Blog</h2>
+                <p>Read through our blog posts</p>
+            </div>
+            <a href="blog.html" class="read-news-button">Read News</a>
+        </div>
+
+        <div class="blog-grid-home">
+            <!-- Blog Card 1 -->
+            <article class="blog-card-home">
+                <img src="img/blog1.jpg" alt="Bee Huro Honey Story" class="blog-card-image">
+                <div class="blog-card-content">
+                    <h3>The story behind the name: Bee HURO Honey</h3>
+                    <p>With connections spanning Hungary, Transylvania, and Western Romania, our founder Eniko Balla discusses her journey...</p>
+                    <a href="blog.html" class="read-more-button">Read More</a>
+                </div>
+            </article>
+
+            <!-- Blog Card 2 -->
+            <article class="blog-card-home">
+                <img src="img/blog2.jpg" alt="Huro Winery History" class="blog-card-image">
+                <div class="blog-card-content">
+                    <h3>Huro Winery - The History of Wine Production</h3>
+                    <p>Discover the rich history of wine production in the renowned Hungarian and Romanian regions where our premium wines originate...</p>
+                    <a href="blog.html" class="read-more-button">Read More</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Video Section -->
+<section class="video-home-section">
+    <div class="container">
+        <div class="video-home-grid">
+            <div class="video-home-content">
+                <h2>BMAC International Trade</h2>
+                <p>Watch the video to learn more about BMAC International Trade and how we can help you grow your business with our premium Hungarian products.</p>
+                <a href="about.html" class="cta-button">About Us</a>
+            </div>
+            <div class="video-home-wrapper">
+                <img src="https://images.unsplash.com/photo-1558642084-fd07fae5282e?w=800&q=80" alt="Bee Huro Honey Video" class="video-home-image">
+                <div class="video-play-button"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Partner Logos -->
+<section class="partners-section">
+    <div class="container">
+        <div class="partners-grid">
+            <div class="partner-logo">
+                <img src="img/london-chamber-of-commerce.png" alt="London Chamber of Commerce">
+            </div>
+            <div class="partner-logo">
+                <img src="img/hungarian-british-business-alliance.png" alt="Hungarian British Business Alliance">
+            </div>
+            <div class="partner-logo">
+                <img src="img/sussex-innovation.png" alt="Sussex Innovation">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-col">
+            <h3 class="footer-logo">BMAC</h3>
+
+            <div class="social-links" style="margin-top: 25px;">
+                <a href="https://www.facebook.com/bmacinternational" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/bmacinternational" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="white" stroke-width="2"/>
+                        <circle cx="17.5" cy="6.5" r="1.5" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4 class="footer-title">Products</h4>
+            <ul class="footer-links">
+                <li><a href="our-wines.html" target="_blank" rel="noopener">Huro Winery</a></li>
+                <li><a href="https://www.thehoneycollab.co.uk" target="_blank" rel="noopener">Bee Huro Honey</a></li>
+                <li><a href="contact.html">Wholesale Inquiry</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4 class="footer-title">Company</h4>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4 class="footer-title">Legal</h4>
+            <ul class="footer-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Wholesale Terms</a></li>
+                <li><a href="#">Shipping Policy</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2023 - BMAC International</p>
+    </div>
+</footer>
+
+<!-- Unicorn Studio Script -->
+<script type="text/javascript">!function(){if(!window.UnicornStudio){window.UnicornStudio={isInitialized:!1};var i=document.createElement("script");i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.34/dist/unicornStudio.umd.js",i.onload=function(){window.UnicornStudio.isInitialized||(UnicornStudio.init(),window.UnicornStudio.isInitialized=!0)},(document.head || document.body).appendChild(i)}}();</script>
+
+<!-- Main Script -->
+<script src="script.js"></script>
+</body>
+</html>
