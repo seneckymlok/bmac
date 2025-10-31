@@ -4786,173 +4786,180 @@ a.cta-button:hover {
     }
 }
 /* ========================================
-   ABOUT PAGE - MOBILE RESPONSIVENESS
+   TIMELINE - MOBILE RESPONSIVE
    ======================================== */
 
 @media (max-width: 768px) {
 
-    /* About Hero Section */
-    .about-hero {
-        padding: 80px 20px;
-        min-height: auto;
+    /* Timeline - Vertical layout on mobile */
+    .timeline {
+        position: relative;
+        padding: 20px 0;
     }
 
-    .about-hero h1 {
-        font-size: 2rem;
-        margin-bottom: 15px;
-        line-height: 1.2;
-    }
-
-    .about-hero p {
-        font-size: 1rem;
+    /* Timeline item */
+    .timeline-item {
+        position: relative;
+        padding: 0 0 40px 60px;
         margin-bottom: 30px;
-        max-width: 100%;
+        display: block;
     }
 
-    /* About Content Section */
-    .about-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        align-items: start;
+    /* Vertical line on LEFT side for mobile */
+    .timeline::before {
+        content: '';
+        position: absolute;
+        left: 15px;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background: var(--wine-red);
     }
 
-    .about-text-block {
-        order: 2;
+    /* Timeline marker dot - FIXED POSITION */
+    .timeline-marker {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 32px;
+        height: 32px;
+        background: var(--wine-red);
+        border: 3px solid white;
+        border-radius: 50%;
+        box-shadow: 0 0 0 2px var(--wine-red);
     }
 
-    .about-image-block {
-        order: 1;
-        width: 100%;
+    /* Timeline content */
+    .timeline-content {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 3px solid var(--wine-red);
     }
 
-    .about-image-block img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 12px;
+    .timeline-date {
+        font-size: 0.85rem;
+        color: var(--wine-red);
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
     }
 
-    .about-text-block h2 {
-        font-size: 1.6rem;
-        margin-bottom: 15px;
-        line-height: 1.3;
-    }
-
-    .about-text-block p {
-        font-size: 0.95rem;
-        line-height: 1.7;
-        margin-bottom: 18px;
-    }
-
-    .about-text-block ul {
-        margin-left: 20px;
-        margin-top: 20px;
-    }
-
-    .about-text-block li {
-        font-size: 0.95rem;
-        margin-bottom: 12px;
-        line-height: 1.6;
-    }
-
-    /* Team Section */
-    .team-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
-
-    .team-member {
-        text-align: center;
-    }
-
-    .team-member img {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-        border-radius: 10px;
-        margin-bottom: 15px;
-    }
-
-    .team-member h3 {
+    .timeline-title {
         font-size: 1.2rem;
-        margin-bottom: 5px;
+        color: var(--black);
+        margin-bottom: 10px;
+        font-weight: 700;
     }
 
-    .team-member p {
+    .timeline-text {
         font-size: 0.9rem;
-    }
-
-    /* About Buttons */
-    .about-hero-buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        width: 100%;
-    }
-
-    .about-hero-buttons a {
-        width: 100%;
-        padding: 15px 20px !important;
-        text-align: center;
-        font-size: 0.9rem;
-    }
-
-    /* Mission/Values Section */
-    .mission-values {
-        grid-template-columns: 1fr;
-        gap: 30px;
-        padding: 40px 20px;
-    }
-
-    .mission-box,
-    .values-box {
-        padding: 25px;
-        text-align: center;
-    }
-
-    .mission-box h3,
-    .values-box h3 {
-        font-size: 1.3rem;
-        margin-bottom: 12px;
-    }
-
-    .mission-box p,
-    .values-box p {
-        font-size: 0.95rem;
         line-height: 1.6;
+        color: var(--text-light);
     }
 }
 
 @media (max-width: 480px) {
 
-    .about-hero {
-        padding: 60px 15px;
+    .timeline-item {
+        padding-left: 50px;
+        margin-bottom: 25px;
     }
 
-    .about-hero h1 {
+    .timeline::before {
+        left: 10px;
+    }
+
+    .timeline-marker {
+        width: 28px;
+        height: 28px;
+        left: -4px;
+        border-width: 2px;
+    }
+
+    .timeline-content {
+        padding: 15px;
+        border-left-width: 2px;
+    }
+
+    .timeline-title {
+        font-size: 1.1rem;
+    }
+
+    .timeline-text {
+        font-size: 0.85rem;
+    }
+}
+
+/* ========================================
+   CTA BUTTONS - CENTERED ON MOBILE
+   ======================================== */
+
+@media (max-width: 768px) {
+
+    .cta-section-about {
+        padding: 60px 20px;
+    }
+
+    .cta-content {
+        text-align: center;
+    }
+
+    .cta-content .section-title {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .cta-content .cta-text {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    /* Centered buttons on mobile */
+    .cta-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cta-buttons a.cta-button {
+        width: 100%;
+        max-width: 280px;
+        padding: 15px 30px !important;
+        text-align: center;
+        font-size: 0.95rem;
+        display: inline-block;
+    }
+
+    .cta-buttons a.cta-button.primary {
+        background: var(--wine-red) !important;
+        color: white !important;
+    }
+
+    .cta-buttons a.cta-button.secondary {
+        background: transparent !important;
+        color: var(--wine-red) !important;
+        border: 2px solid var(--wine-red) !important;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .cta-section-about {
+        padding: 50px 15px;
+    }
+
+    .cta-content .section-title {
         font-size: 1.7rem;
     }
 
-    .about-text-block h2 {
-        font-size: 1.4rem;
-    }
-
-    .about-text-block p {
+    .cta-buttons a.cta-button {
+        max-width: 100%;
+        padding: 12px 20px !important;
         font-size: 0.9rem;
-    }
-
-    .team-member img {
-        height: 200px;
-    }
-
-    .about-hero-buttons a {
-        padding: 12px 18px !important;
-        font-size: 0.85rem;
-    }
-
-    .mission-box,
-    .values-box {
-        padding: 20px;
     }
 }
 
