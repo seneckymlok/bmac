@@ -22,16 +22,34 @@
     <link rel="stylesheet" href="styles.css">
 
     <style>
-        /* Hero Animation */
+        /* Hero Animation - Responsive Sizing */
         .hero-animation {
             position: absolute;
             top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 1440px;
-            height: 900px;
-            max-width: 100vw;
+            left: 0;
+            width: 100%;
+            height: 120vh; /* Extended to hide watermark */
             z-index: 1;
+            overflow: hidden;
+        }
+
+        .hero-animation > div[data-us-project] {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100vw !important;
+            height: 100vh !important;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        /* Ensure the animation fills on large screens */
+        @media (min-width: 1441px) {
+            .hero-animation > div[data-us-project] {
+                width: 100vw !important;
+                height: 120vh !important;
+            }
         }
 
         .hero-overlay {
@@ -43,15 +61,8 @@
             background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.15) 100%);
             z-index: 2;
         }
-
-        @media (max-width: 1440px) {
-            .hero-animation {
-                width: 100%;
-                left: 0;
-                transform: none;
-            }
-        }
     </style>
+
 </head>
 <body class="home-page">
 <!-- Navigation -->
@@ -65,7 +76,7 @@
             <a href="about.html" class="nav-link">About</a>
             <a href="blog.html" class="nav-link">Blog</a>
             <a href="our-wines.html" class="nav-link">HURO Winery</a>
-            <a href="" class="nav-link">HURO Honey</a>
+            <a href="" class="nav-link">The Honey Collab</a>
             <a href="contact.html" class="nav-link">Contact</a>
         </ul>
         <div class="hamburger" id="hamburger">
